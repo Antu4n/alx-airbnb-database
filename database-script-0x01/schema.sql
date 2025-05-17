@@ -197,6 +197,10 @@ ON PROPERTY (location);
 CREATE NONCLUSTERED INDEX idx_property_host
 ON PROPERTY (host_id);
 
+CREATE NONCLUSTERED INDEX idx_property_price 
+ON PROPERTY(price_per_night);
+
+
 -- Indexes for BOOKING table
 CREATE NONCLUSTERED INDEX idx_booking_status
 ON BOOKING (status);
